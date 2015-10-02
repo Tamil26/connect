@@ -32,6 +32,13 @@ Router.route('/CreateProfile', {
 });
 
 
+Router.route('/search', {
+    name: 'search',
+    action: function () {
+        this.render('search');
+    }
+});
+
 Router.route('/loadAid', {
     name: 'aid',
     action: function () {

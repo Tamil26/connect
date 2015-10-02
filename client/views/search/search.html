@@ -1,0 +1,9 @@
+<template name="search">
+<span>
+User: {{> esAutosuggest index="users" placeholder="Search...."}}
+</span>
+{{#ifEsIsSearching index="users"}}
+    <div>Loading...</div>
+{{/ifEsIsSearching}}
+
+</template>
